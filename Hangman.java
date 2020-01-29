@@ -44,12 +44,8 @@ public class Hangman {
                     }
                 }
                 if(amount.size() == 0) {
-                    System.out.print("The word is ");
-                    System.out.print(word);
-                    System.out.print(".");
-                    System.out.print(" You missed ");
-                    System.out.print(misses);
-                    System.out.print(" time(s).");
+                 System.out.println(String.format("The word is %s. You missed %s times",
+													word, misses));
                     break;
                 }
 
